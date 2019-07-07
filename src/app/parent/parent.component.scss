@@ -1,0 +1,32 @@
+$button-width: 40px;
+$button-height: 40px;
+$button-background-color: #f3f3f3;
+
+%button-base {
+  width: $button-width;
+  height: $button-height;
+  background-color: $button-background-color;
+}
+
+:host ::ng-deep {
+  .preset-active {
+    @extend %button-base;
+    color: #242424;
+  }
+  .preset-active:hover {
+    @extend %button-base;
+    background-color: #bebebe;
+    color: #242424;
+  }
+
+  .preset-avaliable {
+    @extend %button-base;
+    background-color: red;
+  }
+
+  .preset-avaliable:hover {
+    @extend %button-base;
+    background-color: #bebebe;
+    color: #242424;
+  }
+}

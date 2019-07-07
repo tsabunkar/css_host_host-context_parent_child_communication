@@ -1,0 +1,14 @@
+<!-- ?Parent Component -->
+
+<app-child2
+  [ngClass]="{
+    'preset-active': preset1Value,
+    'preset-avaliable': !preset1Value
+  }"
+  [toolTipText]="toolTipText"
+  [toolTipDelay]="toolTipDelay"
+  [toolTipClass]="{ 'custom-tooltip': true }"
+  [innerHTML]="innerHTML"
+  (click)="onPresetClick()"
+>
+</app-child2>

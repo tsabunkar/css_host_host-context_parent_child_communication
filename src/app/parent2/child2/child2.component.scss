@@ -1,0 +1,31 @@
+$button-width: 40px;
+$button-height: 40px;
+$button-background-color: #f3f3f3;
+
+%button-base {
+  width: $button-width;
+  height: $button-height;
+  background-color: $button-background-color;
+}
+
+:host-context(.preset-active) button {
+  @extend %button-base;
+  color: #242424;
+}
+:host-context(.preset-active:hover) button {
+  @extend %button-base;
+  background-color: #bebebe;
+  color: #242424;
+}
+
+:host-context(.preset-avaliable) button {
+  @extend %button-base;
+  // color: #6c6c6c;
+  background-color: yellowgreen;
+}
+
+:host-context(.preset-avaliable:hover) button {
+  @extend %button-base;
+  background-color: #bebebe;
+  color: #242424;
+}
