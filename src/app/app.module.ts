@@ -12,6 +12,8 @@ import { Child2Component } from './parent2/child2/child2.component';
 import { Parent3Component } from './parent3/parent3.component';
 import { Child3Component } from './parent3/child3/child3.component';
 import { BackgroundDirective } from './parent3/child3/background.directive';
+import { PlaygroundComponent } from './playground/playground.component';
+import { HighlightDirective } from './playground/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { BackgroundDirective } from './parent3/child3/background.directive';
     Child2Component,
     Parent3Component,
     Child3Component,
-    BackgroundDirective
+    BackgroundDirective,
+    PlaygroundComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

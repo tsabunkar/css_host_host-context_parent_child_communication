@@ -11,6 +11,7 @@ export class Child3Component implements OnInit {
   @Input() toolTipClass;
   @Input() innerHTML;
   @Input() parentStyle;
+
   constructor() {}
 
   ngOnInit() {}
